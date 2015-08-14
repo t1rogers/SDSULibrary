@@ -51,7 +51,7 @@ enum {
     */
 
 	self.locNameArray = [NSArray arrayWithObjects:@"Main Library/ SCC", @"24/7 Area",
-                       @"Media Center",@"Reference",@"Special Collections", nil];
+                       @"Media Center",@"Research Desk",@"Special Collections", nil];
     
     main = [[MainHours alloc] init];
     twofourseven = [[TwoFourSevenHours alloc] init];
