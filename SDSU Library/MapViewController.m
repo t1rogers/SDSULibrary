@@ -48,6 +48,25 @@
 }
 
 
+- (IBAction)mapSatelliteSegmentControlTapped:(UISegmentedControl *)sender
+{
+    switch (sender.selectedSegmentIndex)
+    {
+        case 0:
+            self.campusMap.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            self.campusMap.mapType = MKMapTypeSatellite;
+            break;
+        case 2:
+            self.campusMap.mapType = MKMapTypeHybrid;
+            break;
+            
+        default:
+            break;
+    }
+}
+
 
 - (void)viewDidLoad
 {

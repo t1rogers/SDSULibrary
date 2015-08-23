@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -26,6 +26,7 @@
                         <segue destination="K3I-hd-8SJ" kind="relationship" relationship="viewControllers" id="qPL-AF-M2O"/>
                         <segue destination="XPF-WZ-oPZ" kind="relationship" relationship="viewControllers" id="Rdm-e3-ziD"/>
                         <segue destination="GSo-VB-azB" kind="relationship" relationship="viewControllers" id="nbk-dI-zlV"/>
+                        <segue destination="3aE-yj-RmA" kind="relationship" relationship="viewControllers" id="vfU-XU-ka6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -172,6 +173,16 @@
                                     <outlet property="delegate" destination="K3I-hd-8SJ" id="rPJ-Bv-BXZ"/>
                                 </connections>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BDI-zJ-3BP">
+                                <rect key="frame" x="177" y="93" width="127" height="29"/>
+                                <segments>
+                                    <segment title="Regular"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapSatelliteSegmentControlTapped:" destination="K3I-hd-8SJ" eventType="valueChanged" id="I7d-9T-iMa"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -185,7 +196,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hE0-xU-sBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" numberOfTouchesRequired="6" id="TVL-iy-Dqq"/>
             </objects>
-            <point key="canvasLocation" x="662" y="3291"/>
+            <point key="canvasLocation" x="662" y="3599"/>
         </scene>
         <!--Maps-->
         <scene sceneID="4ZM-PS-EvG">
@@ -217,6 +228,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prO-l1-4ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1217" y="2176"/>
+        </scene>
+        <!--Floor Maps-->
+        <scene sceneID="JB5-di-lsm">
+            <objects>
+                <tableViewController id="3JK-0I-FL6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Floor Maps" id="1OP-3Y-YDL">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="v5Z-1z-9OT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BtO-sN-0sV">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYf-4T-flR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="2910"/>
+        </scene>
+        <!--Floor Maps-->
+        <scene sceneID="q1P-g7-2Pa">
+            <objects>
+                <navigationController id="3aE-yj-RmA" customClass="MyNavigationController" customModule="SDSU_Library" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Floor Maps" id="3dm-rA-xf7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8oc-Gf-ND0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3JK-0I-FL6" kind="relationship" relationship="rootViewController" id="02j-8f-z7B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aH-nO-029" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="2910"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ff7-XU-UX9">

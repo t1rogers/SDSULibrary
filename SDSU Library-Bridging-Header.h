@@ -8,7 +8,6 @@
 
 #ifndef SDSU_Library_SDSU_Library_Bridging_Header_h
 #define SDSU_Library_SDSU_Library_Bridging_Header_h
-#import <SDSU Library/SDSU Library-Swift.h>
 
 #import "BasementLAViewController.h"
 #import <QuartzCore/QuartzCore.h>

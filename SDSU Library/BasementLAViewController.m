@@ -25,7 +25,7 @@
  
  Supported formats are: PNG, TIFF, JPEG. Unsupported formats: GIF, BMP, interlaced images.
  */
-#define kImageFilename @"bla_2013-09.jpg" // 7033x10110 image, 271 MB uncompressed
+#define kImageFilename @"LA-Basement.jpg" // 7033x10110 image, 271 MB uncompressed
 
 /* The arguments to the downsizing routine are the resulting image size, and
  "tile" size. And they are defined in terms of megabytes to simplify the correlation

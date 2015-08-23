@@ -57,6 +57,13 @@
 		8F4DF2E817C91321009232BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4DF2C717C91320009232BB /* UIKit.framework */; };
 		8F4DF2F017C91321009232BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F4DF2EE17C91321009232BB /* InfoPlist.strings */; };
 		8F4DF2F217C91321009232BB /* SDSU_LibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DF2F117C91321009232BB /* SDSU_LibraryTests.m */; };
+		8F5BD4071B7E9A8F00FDD287 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5BD4051B7E9A8F00FDD287 /* ENSideMenu.swift */; };
+		8F5BD4081B7E9A8F00FDD287 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5BD4061B7E9A8F00FDD287 /* ENSideMenuNavigationController.swift */; };
+		8F5BD40E1B7E9ACC00FDD287 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5BD40A1B7E9ACC00FDD287 /* MyMenuTableViewController.swift */; };
+		8F5BD40F1B7E9ACC00FDD287 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5BD40B1B7E9ACC00FDD287 /* MyNavigationController.swift */; };
+		8F5BD4101B7E9ACC00FDD287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5BD40C1B7E9ACC00FDD287 /* ViewController.swift */; };
+		8F5BD4111B7E9ACC00FDD287 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5BD40D1B7E9ACC00FDD287 /* ViewController2.swift */; };
+		8F8FECD81B8A5B5300EF0C2D /* SDSUBuildings.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FECD71B8A5B5300EF0C2D /* SDSUBuildings.xcassets */; };
 		8F8FFEAA17EAA79A00651768 /* AsiaPacStud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FFEA917EAA79A00651768 /* AsiaPacStud.m */; };
 		8F8FFEAD17EAA7AC00651768 /* Astronomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FFEAC17EAA7AC00651768 /* Astronomy.m */; };
 		8F8FFEB017EAA7B700651768 /* Biology.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FFEAF17EAA7B700651768 /* Biology.m */; };
@@ -125,7 +132,6 @@
 		8FB4E9EF191EF6B200D8A9A7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB4E9EE191EF6B200D8A9A7 /* MediaPlayer.framework */; };
 		8FC2DC031B5C491000E13201 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC2DC021B5C491000E13201 /* MapKit.framework */; };
 		8FC2DC051B5C499400E13201 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC2DC041B5C499400E13201 /* CoreLocation.framework */; };
-		8FC2DC141B5C5FBD00E13201 /* LoveLibrary.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2DC131B5C5FBD00E13201 /* LoveLibrary.png */; };
 		8FC2DC171B5C61B600E13201 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2DC161B5C61B600E13201 /* CustomAnnotationView.m */; };
 		8FC2DC1A1B5C624400E13201 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2DC191B5C624400E13201 /* CustomAnnotation.m */; };
 		8FC2DC1D1B5C996E00E13201 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2DC1C1B5C996E00E13201 /* MapViewController.m */; };
@@ -246,7 +252,15 @@
 		8F4DF2ED17C91321009232BB /* SDSU LibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDSU LibraryTests-Info.plist"; sourceTree = "<group>"; };
 		8F4DF2EF17C91321009232BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F4DF2F117C91321009232BB /* SDSU_LibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDSU_LibraryTests.m; sourceTree = "<group>"; };
+		8F5BD4051B7E9A8F00FDD287 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = "../../ENSwiftSideMenu-master/Library/ENSideMenu.swift"; sourceTree = "<group>"; };
+		8F5BD4061B7E9A8F00FDD287 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = "../../ENSwiftSideMenu-master/Library/ENSideMenuNavigationController.swift"; sourceTree = "<group>"; };
+		8F5BD40A1B7E9ACC00FDD287 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = "../../ENSwiftSideMenu-master/Example/SwiftSideMenu/MyMenuTableViewController.swift"; sourceTree = "<group>"; };
+		8F5BD40B1B7E9ACC00FDD287 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = "../../ENSwiftSideMenu-master/Example/SwiftSideMenu/MyNavigationController.swift"; sourceTree = "<group>"; };
+		8F5BD40C1B7E9ACC00FDD287 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../ENSwiftSideMenu-master/Example/SwiftSideMenu/ViewController.swift"; sourceTree = "<group>"; };
+		8F5BD40D1B7E9ACC00FDD287 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = "../../ENSwiftSideMenu-master/Example/SwiftSideMenu/ViewController2.swift"; sourceTree = "<group>"; };
+		8F5BD4141B7EA4A500FDD287 /* SDSU Library-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDSU Library-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		8F72AB911A98ECA0002DCC5F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8F8FECD71B8A5B5300EF0C2D /* SDSUBuildings.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = SDSUBuildings.xcassets; path = "SDSU LibraryTests/SDSUBuildings.xcassets"; sourceTree = SOURCE_ROOT; };
 		8F8FFEA817EAA79A00651768 /* AsiaPacStud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsiaPacStud.h; sourceTree = "<group>"; };
 		8F8FFEA917EAA79A00651768 /* AsiaPacStud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsiaPacStud.m; sourceTree = "<group>"; };
 		8F8FFEAB17EAA7AC00651768 /* Astronomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Astronomy.h; sourceTree = "<group>"; };
@@ -386,7 +400,6 @@
 		8FB4E9EE191EF6B200D8A9A7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8FC2DC021B5C491000E13201 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8FC2DC041B5C499400E13201 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		8FC2DC131B5C5FBD00E13201 /* LoveLibrary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoveLibrary.png; path = "../../MapCallouts/MapCallouts iOS/Images.xcassets/SDSU_Buildings/LoveLibrary.imageset/LoveLibrary.png"; sourceTree = "<group>"; };
 		8FC2DC151B5C61B600E13201 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
 		8FC2DC161B5C61B600E13201 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
 		8FC2DC181B5C624400E13201 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
@@ -507,6 +520,7 @@
 		8F4DF2B717C91320009232BB = {
 			isa = PBXGroup;
 			children = (
+				8F5BD4141B7EA4A500FDD287 /* SDSU Library-Bridging-Header.h */,
 				8FE90DAC1A91686A005974DB /* SVWebViewController */,
 				8F4DF2C917C91320009232BB /* SDSU Library */,
 				8F4DF2EB17C91321009232BB /* SDSU LibraryTests */,
@@ -560,6 +574,7 @@
 				8F4DF30017C91370009232BB /* CallNumbers */,
 				8F4DF2FD17C9134C009232BB /* Maps */,
 				8F4DF2DE17C91321009232BB /* Images.xcassets */,
+				8F8FECD71B8A5B5300EF0C2D /* SDSUBuildings.xcassets */,
 				8F3B91D71A93006D00556F07 /* Icon-76.png */,
 				8F36AD7C17EFE7E20053E3E0 /* Icon.png */,
 				8F3B91D51A92FFE100556F07 /* Icon-76@2x.png */,
@@ -636,7 +651,10 @@
 		8F4DF2FD17C9134C009232BB /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				8F5BD4051B7E9A8F00FDD287 /* ENSideMenu.swift */,
+				8F5BD4061B7E9A8F00FDD287 /* ENSideMenuNavigationController.swift */,
 				8FC2DC181B5C624400E13201 /* CustomAnnotation.h */,
+				8F5BD4091B7E9AB200FDD287 /* MapControllers */,
 				8FC2DC191B5C624400E13201 /* CustomAnnotation.m */,
 				8FC2DC151B5C61B600E13201 /* CustomAnnotationView.h */,
 				8FC2DC161B5C61B600E13201 /* CustomAnnotationView.m */,
@@ -650,7 +668,6 @@
 				8FB1F7AD1925A1EF00BE2F4E /* ImageScrollView.m */,
 				8FB1F7B21925A3A200BE2F4E /* TiledImageView.h */,
 				8FB1F7B31925A3A200BE2F4E /* TiledImageView.m */,
-				8FC2DC131B5C5FBD00E13201 /* LoveLibrary.png */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -697,6 +714,17 @@
 				8F1BBCB717C9B37C00B6071F /* LCBasicInteractionViewController.m */,
 			);
 			name = CallNumbers;
+			sourceTree = "<group>";
+		};
+		8F5BD4091B7E9AB200FDD287 /* MapControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F5BD40A1B7E9ACC00FDD287 /* MyMenuTableViewController.swift */,
+				8F5BD40B1B7E9ACC00FDD287 /* MyNavigationController.swift */,
+				8F5BD40C1B7E9ACC00FDD287 /* ViewController.swift */,
+				8F5BD40D1B7E9ACC00FDD287 /* ViewController2.swift */,
+			);
+			name = MapControllers;
 			sourceTree = "<group>";
 		};
 		8FC2DC011B5C451D00E13201 /* Floor Plans */ = {
@@ -1032,7 +1060,6 @@
 				8F8FFF3317EABC2200651768 /* book.png in Resources */,
 				8FECC8FC1A95A75700F8C06C /* Icon-60@2x.png in Resources */,
 				8FDDB7EF17D5A9EF00A2DA76 /* lcco_p.rtf in Resources */,
-				8FC2DC141B5C5FBD00E13201 /* LoveLibrary.png in Resources */,
 				8FDDB7F317D5A9FE00A2DA76 /* lcco_u.rtf in Resources */,
 				8FDDB7F017D5A9F500A2DA76 /* lcco_r.rtf in Resources */,
 				8F4DF2CE17C91320009232BB /* InfoPlist.strings in Resources */,
@@ -1057,6 +1084,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FCF8DB81B6E9375003B598B /* SDSU_Directions.geojson in Resources */,
+				8F8FECD81B8A5B5300EF0C2D /* SDSUBuildings.xcassets in Resources */,
 				8F4DF2F017C91321009232BB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1108,6 +1136,7 @@
 				8FE90DCF1A91686A005974DB /* SVWebViewController.m in Sources */,
 				8F8FFEC517EAA84500651768 /* Dance.m in Sources */,
 				8FAFDA5217C94754002A2C87 /* MediaHours.m in Sources */,
+				8F5BD4101B7E9ACC00FDD287 /* ViewController.swift in Sources */,
 				8F8FFEB017EAA7B700651768 /* Biology.m in Sources */,
 				8F8FFF0D17EAA96B00651768 /* Philosophy.m in Sources */,
 				8F8FFEE017EAA8AF00651768 /* HealthSci.m in Sources */,
@@ -1119,6 +1148,7 @@
 				8FAFDA5817C947B7002A2C87 /* TwoFourSevenHours.m in Sources */,
 				8F8FFEE617EAA8D000651768 /* ItalSpanPort.m in Sources */,
 				8F8FFF1317EAA99200651768 /* Psychology.m in Sources */,
+				8F5BD4071B7E9A8F00FDD287 /* ENSideMenu.swift in Sources */,
 				8F8FFEBC17EAA7E400651768 /* ChiJapKor.m in Sources */,
 				8F8FFF3117EAA9F300651768 /* DVDs.m in Sources */,
 				8FAFDA6517C965A9002A2C87 /* Day.m in Sources */,
@@ -1138,14 +1168,18 @@
 				8F8FFF1F17EAA9C300651768 /* SocialWork.m in Sources */,
 				8F8FFEC217EAA83B00651768 /* CompSci.m in Sources */,
 				8FE90DCD1A91686A005974DB /* SVModalWebViewController.m in Sources */,
+				8F5BD40E1B7E9ACC00FDD287 /* MyMenuTableViewController.swift in Sources */,
 				8F020D101AB6005A005DD304 /* SearchButton.m in Sources */,
 				8F8FFF2B17EAA9E300651768 /* Women.m in Sources */,
 				8F8FFF0717EAA95100651768 /* Nutrition.m in Sources */,
 				8FDE4A7117E6176D00C86883 /* PoliSci.m in Sources */,
+				8F5BD4111B7E9ACC00FDD287 /* ViewController2.swift in Sources */,
 				8F8FFEE317EAA8C000651768 /* History.m in Sources */,
+				8F5BD4081B7E9A8F00FDD287 /* ENSideMenuNavigationController.swift in Sources */,
 				8FDE4A6E17E6159400C86883 /* NewBook.m in Sources */,
 				8FCAB9BC1A9EB4E600FEBFDA /* NewBookCell.m in Sources */,
 				8F8FFEF817EAA91800651768 /* Math.m in Sources */,
+				8F5BD40F1B7E9ACC00FDD287 /* MyNavigationController.swift in Sources */,
 				8FC2DC1A1B5C624400E13201 /* CustomAnnotation.m in Sources */,
 				8F1BBCAF17C98A6300B6071F /* LCList.m in Sources */,
 				8FB1F7AE1925A1EF00BE2F4E /* ImageScrollView.m in Sources */,
@@ -1244,6 +1278,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1282,6 +1317,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1306,6 +1342,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SDSU Library/SDSU Library.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDSU Library/SDSU Library-Prefix.pch";
 				INFOPLIST_FILE = "SDSU Library/SDSU Library-Info.plist";
@@ -1313,7 +1350,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SDSU Library/SDSU Library-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDSU Library-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1329,6 +1366,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SDSU Library/SDSU Library.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SDSU Library/SDSU Library-Prefix.pch";
 				INFOPLIST_FILE = "SDSU Library/SDSU Library-Info.plist";
@@ -1336,7 +1374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SDSU Library/SDSU Library-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDSU Library-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

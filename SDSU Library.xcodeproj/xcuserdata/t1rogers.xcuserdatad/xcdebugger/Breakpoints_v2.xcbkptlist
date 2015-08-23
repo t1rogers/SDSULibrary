@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SDSU Library/MapViewController.m"
-            timestampString = "460353948.090791"
+            timestampString = "461647973.271837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1062"
-            endingLineNumber = "1062"
+            startingLineNumber = "1081"
+            endingLineNumber = "1081"
             landmarkName = "-chooseLocation:"
             landmarkType = "5">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SDSU Library/MapViewController.m"
-            timestampString = "460437361.148346"
+            timestampString = "461647973.271837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1179"
-            endingLineNumber = "1179"
+            startingLineNumber = "1198"
+            endingLineNumber = "1198"
             landmarkName = "-chooseLocation:"
             landmarkType = "5">
          </BreakpointContent>
