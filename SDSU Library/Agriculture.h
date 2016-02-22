@@ -1,4 +1,4 @@
-//
+
 //  Agriculture.h
 //  SDSU Library
 //
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Agriculture : UITableViewController
+@interface Agriculture: UITableViewController <NSXMLParserDelegate>
 
 
+@property (nonatomic) CGRect estimatedItemSize;
 
 @end

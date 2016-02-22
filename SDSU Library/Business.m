@@ -8,9 +8,11 @@
 
 #import "Business.h"
 #import "NewBooksXMLParser.h"
-#import "SVModalWebViewController.h"
 #import "NewBook.h"
 #import "NewBookCell.h"
+
+@import SafariServices;
+
 
 
 // This framework is imported so we can use the kCFURLErrorNotConnectedToInternet error code.
@@ -34,7 +36,7 @@
     [super viewDidLoad];
     
     self.bookList = [NSMutableArray array];
-    self.title = @"Business";
+    self.title = @"Chemistry";
     self.tableView.estimatedRowHeight = 100.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     /*
@@ -43,7 +45,7 @@
      IMPORTANT! The main thread of the application should never be blocked!
      Also, avoid synchronous network access on any thread.
      */
-    static NSString *feedURLString = @"http://libpac.sdsu.edu/feeds/bus.xml";
+    static NSString *feedURLString = @"http://libpac.sdsu.edu/feeds/.xml";
     NSURLRequest *bookURLRequest =
     [NSURLRequest requestWithURL:[NSURL URLWithString:feedURLString]];
     self.bookFeedConnection = [[NSURLConnection alloc] initWithRequest:bookURLRequest delegate:self];
@@ -212,16 +214,20 @@
 
 
 /**
- * When the user taps a row in the table, display the USGS web page that displays details of the earthquake they selected.
+ * When the user taps a row in the table, display SFSafariVierController to show the bib record.
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NewBook *newBook = (self.bookList)[indexPath.row];
-    
-    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress: [newBook link]];
+    NSURL *URL = [NSURL URLWithString:[newBook link]];
+    SFSafariViewController *webViewController = [[SFSafariViewController alloc] initWithURL:URL];
+    webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self presentViewController:webViewController animated:YES completion:NULL];
     
+    
 }
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -235,7 +241,6 @@
         [segue.destinationViewController setTitle:@"New Books"];
     }
 }
-
 
 
 #pragma mark -

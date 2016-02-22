@@ -35,7 +35,25 @@ NSString *kBooksMessageErrorKey = @"BooksMsgErrorKey";
     NSUInteger _parsedNewBooksCounter;
     BOOL ignoreElement;
 }
++ (NSString *)AddNewBooksNotificationName
+{
+    return @"AddEarthquakesNotif";
+}
 
++ (NSString *)NewBooksResultsKey
+{
+    return @"EarthquakeResultsKey";
+}
+
++ (NSString *)NewBooksErrorNotificationName
+{
+    return @"EarthquakeErrorNotif";
+}
+
++ (NSString *)NewBooksMessageErrorKey
+{
+    return @"EarthquakesMsgErrorKey";
+}
 
 - (id)initWithData:(NSData *)parseData {
     
@@ -133,6 +151,7 @@ static NSString * const kDescriptionElementName = @"description";
     
     
     
+    
     if ([elementName isEqualToString:kEntryElementName]) {
         
         [self.currentParseBatch addObject:self.currentBookObject];
@@ -160,12 +179,13 @@ static NSString * const kDescriptionElementName = @"description";
         
         NSScanner *scanner = [NSScanner scannerWithString:self.currentParsedCharacterData];
         
-        NSMutableString *link = nil;
+        NSString *link = nil;
         // Scan the remainer of the string.
         if ([scanner scanUpToCharactersFromSet:
              [NSCharacterSet illegalCharacterSet] intoString:&link]) {
             self.currentBookObject.link = link;
         }
+
         
         
     }

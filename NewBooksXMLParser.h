@@ -19,7 +19,12 @@ extern NSString *kBooksMessageErrorKey;
 
 - (id)initWithData:(NSData *)parseData;
 
++ (NSString *)AddNewBooksNotificationName;       // NSNotification name for sending earthquake data back to the app delegate
++ (NSString *)NewBooksResultsKey;                 // NSNotification userInfo key for obtaining the earthquake data
 
++ (NSString *)NewBooksErrorNotificationName;     // NSNotification name for reporting errors
++ (NSString *)NewBooksMessageErrorKey;           // NSNotification userInfo key for obtaining the error messa
 
+ 
 @end
 

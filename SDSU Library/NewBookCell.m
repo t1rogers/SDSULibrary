@@ -7,8 +7,10 @@
 //
 
 #import "NewBookCell.h"
+#import "NewBook.h"
 
 @implementation NewBookCell
+
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -25,6 +27,9 @@
     
     return self;
 }
+
+
+
 
 - (void)layoutSubviews
 {

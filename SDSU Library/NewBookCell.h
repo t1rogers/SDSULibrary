@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
+
+@class NewBook;
 
 @interface NewBookCell : UITableViewCell
+
 
 @end

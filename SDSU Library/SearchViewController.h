@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController 
 
 -(IBAction)pacSearchViewController;
 -(IBAction)xerxesSearchViewController;
 -(IBAction)readingListController;
+-(IBAction)dbazController;
+-(IBAction)researchGuidesController;
+
 
 @end

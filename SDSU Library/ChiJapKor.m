@@ -8,9 +8,10 @@
 
 #import "ChiJapKor.h"
 #import "NewBooksXMLParser.h"
-#import "SVModalWebViewController.h"
 #import "NewBook.h"
 #import "NewBookCell.h"
+
+@import SafariServices;
 
 // This framework is imported so we can use the kCFURLErrorNotConnectedToInternet error code.
 #import <CFNetwork/CFNetwork.h>
@@ -210,14 +211,17 @@
 
 
 /**
- * When the user taps a row in the table, display the USGS web page that displays details of the earthquake they selected.
+ * When the user taps a row in the table, display SFSafariVierController to show the bib record.
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NewBook *newBook = (self.bookList)[indexPath.row];
-    
-    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress: [newBook link]];
+    NSURL *URL = [NSURL URLWithString:[newBook link]];
+    SFSafariViewController *webViewController = [[SFSafariViewController alloc] initWithURL:URL];
+    webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self presentViewController:webViewController animated:YES completion:NULL];
+    
     
 }
 

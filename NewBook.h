@@ -12,7 +12,7 @@
 
 {
     NSMutableString *title;
-    NSMutableString *description;
+    NSString *description;
     NSMutableString *link;
     UIFont *font;
     UILabel *contentLabel;
@@ -21,8 +21,8 @@
 }
 
 @property (nonatomic) NSMutableString	 *title;
-@property (nonatomic) NSMutableString	 *description;
-@property (nonatomic) NSMutableString    *link;
+@property (nonatomic) NSString	 *description;
+@property (nonatomic) NSString   *link;
 @property (nonatomic) UIFont             *font;
 @property (nonatomic) UILabel            *contentLabel;
 @end

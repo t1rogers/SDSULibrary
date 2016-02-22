@@ -15,7 +15,7 @@
 @property (nonatomic, weak) IBOutlet MKMapView *campusMap;
 @property (nonatomic, strong) NSMutableArray *mapAnnotations;
 @property (nonatomic, strong) CLLocationManager *locationManager;
-//@property(nonatomic, readonly) MKUserLocation *userLocation;
+@property(nonatomic, readonly) MKUserLocation *userLocation;
 
 
 @end
@@ -27,7 +27,9 @@
 
 - (void)gotoDefaultLocation
 {
+    
     // start off by default in San Diego State University
+    
     MKCoordinateRegion newRegion;
     newRegion.center.latitude = 32.774937;
     newRegion.center.longitude = -117.071128;
@@ -37,15 +39,30 @@
     [self.campusMap setRegion:newRegion animated:YES];
 
     [self.campusMap setShowsUserLocation:YES];
+
+    // You have coordinates
+
+
     
 }
 
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    //or maybe you would do the call above in the code path that sets the annotations array
+}
+
+
+/*
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
 
 }
+*/
 
 
 - (IBAction)mapSatelliteSegmentControlTapped:(UISegmentedControl *)sender
@@ -84,7 +101,7 @@
     
      //Start tracking user's location.  Taken from Footprint.
     self.locationManager = [[CLLocationManager alloc] init];
-    //[self.campusMap setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
+    [self.campusMap setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
     
     [self gotoDefaultLocation];
     
@@ -172,6 +189,33 @@
     
     return returnedAnnotationView;
 }
+
+/// Produce each type of annotation view that might exist in our MapView.
+- (MKAnnotationView *)campusMap:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    /*
+     For now, all we have are some quick and dirty pins for viewing debug
+     annotations.
+     To learn more about showing annotations, see "Annotating Maps" doc
+     */
+    if ([annotation.title isEqualToString:@"red"]) {
+        MKPinAnnotationView *pinView = [[MKPinAnnotationView alloc] init];
+        pinView.pinTintColor = [UIColor redColor];
+        pinView.canShowCallout = YES;
+        return pinView;
+    }
+    
+    if ([annotation.title isEqualToString:@"green"]) {
+        MKPinAnnotationView *pinView = [[MKPinAnnotationView alloc] init];
+        pinView.pinTintColor = [UIColor greenColor];
+        pinView.canShowCallout = YES;
+        return pinView;
+    }
+    
+
+    
+    return nil;
+}
+
 
 
 -(IBAction)chooseLocation:(id)sender
@@ -323,11 +367,19 @@
                                                                  item.imageName = @"ArtGallery";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.778126, -117.071793);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
                                                                  
                                                              }];
     UIAlertAction* artsandLettersAction = [UIAlertAction actionWithTitle:@"Arts and Letters (AL)" style:UIAlertActionStyleDefault
@@ -342,32 +394,38 @@
                                                                  item.imageName = @"HepnerHall";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.777488, -117.073188);
                                                                  
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green"; 
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
                                                                  
                                                              }];
 
     UIAlertAction* aztecAthleticCenterAction = [UIAlertAction actionWithTitle:@"Aztec Athletic Center (AZAT)" style:UIAlertActionStyleDefault
                                                                     handler:^(UIAlertAction * action) {
                                                                         
-                                                                        self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-                                                                        [self.campusMap removeAnnotations:self.campusMap.annotations];
-                                                                        [self.mapAnnotations removeAllObjects];
+                                                                 self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
+                                                                 [self.campusMap removeAnnotations:self.campusMap.annotations];
+                                                                 [self.mapAnnotations removeAllObjects];
                                                                         
-                                                                        // annotation for Hepner Hall
-                                                                        CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                        item.place = @"Aztec Athletic Center (AZAT)";
-                                                                        item.imageName = @"HepnerHall";
-                                                                        item.coordinate = CLLocationCoordinate2DMake(32.774006, -117.076262);
+                                                                 // annotation for Hepner Hall
+                                                                 CustomAnnotation *item = [[CustomAnnotation alloc] init];
+                                                                 item.place = @"Aztec Athletic Center (AZAT)";
+                                                                 item.imageName = @"AztecAthleticCenter";
+                                                                 item.coordinate = CLLocationCoordinate2DMake(32.774006, -117.076262);
                                                                         
-                                                                        // user tapped "Tea Gardon" button in the bottom toolbar
-                                                                        [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                        [self.mapAnnotations addObject:item];
-                                                                        [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                        item = nil;
+                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 [self gotoByAnnotationClass:[CustomAnnotation class]];
+                                                                 [self.mapAnnotations addObject:item];
+                                                                 [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 item = nil;
                                                                         
                                                                     }];
     
@@ -403,7 +461,7 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Aztec Recreation Center (ARC)";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"AztecRecreationCenter";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776315, -117.076262);
                                                                  
                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
@@ -424,7 +482,7 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Bioscience Center";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"BIoScience";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.778083, -117.071257);
                                                                  
                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
@@ -444,7 +502,7 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Hepner Hall";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"BlicksArt";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.77802, -117.072075);
                                                                  
                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
@@ -521,7 +579,7 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Chemical Sciences Laboratory";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"ChemSciLab";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776523, -117.068682);
                                                                  
                                                                  // user tapped "Tea Gardon" button in the bottom toolbar

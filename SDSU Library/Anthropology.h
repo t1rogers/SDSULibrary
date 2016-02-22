@@ -10,6 +10,7 @@
 
 @interface Anthropology: UITableViewController 
 
+
 @property (nonatomic) CGRect estimatedItemSize;
 
 @end

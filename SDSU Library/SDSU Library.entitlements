@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>com.apple.developer.associated-domains</key>
-	<array/>
+	<array>
+		<string>webcredentials:example.com</string>
+		<string>libpac.sdsu.edu</string>
+	</array>
 	<key>inter-app-audio</key>
 	<true/>
 	<key>keychain-access-groups</key>

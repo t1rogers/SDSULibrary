@@ -1,10 +1,16 @@
-
+//
+//  AsiaPacStud.m
+//  SDSU Library
+//
+//  Created by Tyler Rogers on 9/18/13.
+//  Copyright (c) 2013 San Diego State University. All rights reserved.
+//
 
 #import "Art.h"
 #import "NewBooksXMLParser.h"
-#import "SVModalWebViewController.h"
 #import "NewBook.h"
 #import "NewBookCell.h"
+@import SafariServices;
 
 
 // This framework is imported so we can use the kCFURLErrorNotConnectedToInternet error code.
@@ -26,12 +32,11 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    [self.tableView sizeToFit];
+    
     self.bookList = [NSMutableArray array];
     self.title = @"Art";
     self.tableView.estimatedRowHeight = 100.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    
     /*
      Use NSURLConnection to asynchronously download the data. This means the main thread will not be blocked - the application will remain responsive to the user.
      
@@ -207,16 +212,20 @@
 
 
 /**
- * When the user taps a row in the table, display the USGS web page that displays details of the earthquake they selected.
+ * When the user taps a row in the table, display SFSafariVierController to show the bib record.
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NewBook *newBook = (self.bookList)[indexPath.row];
-    
-    SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress: [newBook link]];
+    NSURL *URL = [NSURL URLWithString:[newBook link]];
+    SFSafariViewController *webViewController = [[SFSafariViewController alloc] initWithURL:URL];
+    webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self presentViewController:webViewController animated:YES completion:NULL];
     
+    
 }
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -231,6 +240,7 @@
     }
 }
 
+
 #pragma mark -
 
 - (void)viewDidUnLoad {
@@ -238,7 +248,6 @@
     _bookList = nil;
     
 }
-
 
 
 
