@@ -25,7 +25,7 @@
  
  Supported formats are: PNG, TIFF, JPEG. Unsupported formats: GIF, BMP, interlaced images.
  */
-#define kImageFilename @"allfloors_2013-08.jpg" // 7033x10110 image, 271 MB uncompressed
+#define kImageFilename @"AllLib.png" // 7033x10110 image, 271 MB uncompressed
 
 /* The arguments to the downsizing routine are the resulting image size, and
  "tile" size. And they are defined in terms of megabytes to simplify the correlation
@@ -93,31 +93,32 @@
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
+    
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
+#pragma mark - View lifecycl
 /*
  -(void)loadView {
- 
- }*/
+ }
+ */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
     //--
-
+    
     progressView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:progressView];
     [NSThread detachNewThreadSelector:@selector(downsize:) toTarget:self withObject:nil];
-    self.title = @"Library Overview";
+    self.title = @"Basement Library Addition";
 }
 
 - (void)viewDidUnload {
-    [super viewDidUnload];
+    [super viewDidLoad];
     
     // Release any retained subviews of the main view.
-
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -167,8 +168,8 @@
     // flip the output graphics context so that it aligns with the
     // cocoa style orientation of the input document. this is needed
     // because we used cocoa's UIImage -imageNamed to open the input file.
-	CGContextTranslateCTM( destContext, 0.0f, destResolution.height );
-	CGContextScaleCTM( destContext, 1.0f, -1.0f );
+    CGContextTranslateCTM( destContext, 0.0f, destResolution.height );
+    CGContextScaleCTM( destContext, 1.0f, -1.0f );
     // now define the size of the rectangle to be used for the
     // incremental blits from the input image to the output image.
     // we use a source tile width equal to the width of the source
@@ -245,7 +246,7 @@
     NSLog(@"downsize complete.");
     [self performSelectorOnMainThread:@selector(initializeScrollView:) withObject:nil waitUntilDone:YES];
     // free the context since its job is done. destImageRef retains the pixel data now.
-	//CGContextRelease( destContext );
+    //CGContextRelease( destContext );
     
 }
 
@@ -273,7 +274,5 @@
     scrollView = [[ImageScrollView alloc] initWithFrame:self.view.bounds image:self.destImage];
     [self.view addSubview:scrollView];
 }
-
-
 
 @end

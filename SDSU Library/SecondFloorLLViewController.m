@@ -25,7 +25,7 @@
  
  Supported formats are: PNG, TIFF, JPEG. Unsupported formats: GIF, BMP, interlaced images.
  */
-#define kImageFilename @"LL-2ndFloor.jpg" // 7033x10110 image, 271 MB uncompressed
+#define kImageFilename @"LL-2ndFloor.png" // 7033x10110 image, 271 MB uncompressed
 
 /* The arguments to the downsizing routine are the resulting image size, and
  "tile" size. And they are defined in terms of megabytes to simplify the correlation
@@ -55,29 +55,29 @@
  These constants are suggested initial values for iPad1, and iPhone 3GS */
 #define IPAD1_IPHONE3GS
 #ifdef IPAD1_IPHONE3GS
-#   define kDestImageSizeMB 60.0f // The resulting image will be (x)MB of uncompressed image data.
-#   define kSourceImageTileSizeMB 20.0f // The tile size will be (x)MB of uncompressed image data.
+#   define kDestImageSizeMB 7.5f // The resulting image will be (x)MB of uncompressed image data.
+#   define kSourceImageTileSizeMB 2.5f // The tile size will be (x)MB of uncompressed image data.
 #endif
 
 /* These constants are suggested initial values for iPad2, and iPhone 4 */
 //#define IPAD2_IPHONE4
 #ifdef IPAD2_IPHONE4
-#   define kDestImageSizeMB 120.0f // The resulting image will be (x)MB of uncompressed image data.
-#   define kSourceImageTileSizeMB 40.0f // The tile size will be (x)MB of uncompressed image data.
+#   define kDestImageSizeMB 15.0f // The resulting image will be (x)MB of uncompressed image data.
+#   define kSourceImageTileSizeMB 5.0f // The tile size will be (x)MB of uncompressed image data.
 #endif
 
 /* These constants are suggested initial values for iPhone3G, iPod2 and earlier devices */
 //#define IPHONE3G_IPOD2_AND_EARLIER
 #ifdef IPHONE3G_IPOD2_AND_EARLIER
-#   define kDestImageSizeMB 30.0f // The resulting image will be (x)MB of uncompressed image data.
-#   define kSourceImageTileSizeMB 10.0f // The tile size will be (x)MB of uncompressed image data.
+#   define kDestImageSizeMB 3.75f // The resulting image will be (x)MB of uncompressed image data.
+#   define kSourceImageTileSizeMB 1.25f // The tile size will be (x)MB of uncompressed image data.
 #endif
 
 /* Constants for all other iOS devices are left to be defined by the developer.
  The purpose of this sample is to illustrate that device specific constants can
  and should be created by you the developer, versus iterating a complete list. */
 
-#define bytesPerMB 1048576.0f
+#define bytesPerMB 524288.0f
 #define bytesPerPixel 4.0f
 #define pixelsPerMB ( bytesPerMB / bytesPerPixel ) // 262144 pixels, for 4 bytes per pixel.
 #define destTotalPixels kDestImageSizeMB * pixelsPerMB
@@ -98,19 +98,16 @@
 }
 
 #pragma mark - View lifecycle
-
-
 /*
  -(void)loadView {
  
  }*/
 
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-
+    ;
     progressView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:progressView];
     [NSThread detachNewThreadSelector:@selector(downsize:) toTarget:self withObject:nil];
@@ -120,7 +117,7 @@
     [super viewDidUnload];
     
     // Release any retained subviews of the main view.
-
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -170,8 +167,8 @@
     // flip the output graphics context so that it aligns with the
     // cocoa style orientation of the input document. this is needed
     // because we used cocoa's UIImage -imageNamed to open the input file.
-	CGContextTranslateCTM( destContext, 0.0f, destResolution.height );
-	CGContextScaleCTM( destContext, 1.0f, -1.0f );
+    CGContextTranslateCTM( destContext, 0.0f, destResolution.height );
+    CGContextScaleCTM( destContext, 1.0f, -1.0f );
     // now define the size of the rectangle to be used for the
     // incremental blits from the input image to the output image.
     // we use a source tile width equal to the width of the source
@@ -248,6 +245,7 @@
     NSLog(@"downsize complete.");
     [self performSelectorOnMainThread:@selector(initializeScrollView:) withObject:nil waitUntilDone:YES];
     // free the context since its job is done. destImageRef retains the pixel data now.
+    CGContextRelease( destContext );
     
 }
 
@@ -258,7 +256,7 @@
     // wrap a UIImage around the CGImage
     self.destImage = [UIImage imageWithCGImage:destImageRef scale:1.0f orientation:UIImageOrientationDownMirrored];
     // release ownership of the CGImage, since destImage retains ownership of the object now.
-    CGImageRelease( destImageRef );
+    //CGImageRelease( destImageRef );
     if( destImage == nil ) NSLog(@"destImage is nil.");
 }
 

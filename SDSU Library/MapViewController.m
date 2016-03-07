@@ -241,10 +241,18 @@
                                                                  item.place = @"Adams Humanities (AH)";
                                                                  item.imageName = @"AdamsHumanities";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.774015, -117.071385);
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                 
 
                                                                  
@@ -262,10 +270,18 @@
                                                                  item.place = @"Administration (AD)";
                                                                  item.imageName = @"Administration";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.775724, -117.070967);
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     
@@ -280,12 +296,21 @@
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  //load new name and image.
                                                                  item.place = @"American Language Institute (ALI)";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"GatewayCenter";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.7771333, -117.0743);
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                             }];
     
@@ -303,10 +328,18 @@
                                                                  item.imageName = @"AquaPlex";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.774136, -117.08006);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  
                                                              }];
@@ -324,10 +357,18 @@
                                                                item.imageName = @"HepnerHall";
                                                                item.coordinate = CLLocationCoordinate2DMake(32.774136, -117.08006);
                                                                
-                                                               // user tapped "Tea Gardon" button in the bottom toolbar
+                                                               MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                               you.title = @"green";
+                                                               you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                               
+                                                               // user tapped "Art Gallery" button in the bottom toolbar
                                                                [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                [self.mapAnnotations addObject:item];
+                                                               [self.mapAnnotations addObject:you];
                                                                [self.campusMap addAnnotations:self.mapAnnotations];
+                                                               [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                               
+                                                               [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                
                                                                
                                                            }];
@@ -347,10 +388,18 @@
                                                                  item.imageName = @"ArtSouth";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.77779, -117.072118);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  
                                                              }];
@@ -391,7 +440,7 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Arts and Letters (AL)";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.777488, -117.073188);
                                                                  
                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
@@ -408,7 +457,7 @@
                                                                  
                                                              }];
 
-    UIAlertAction* aztecAthleticCenterAction = [UIAlertAction actionWithTitle:@"Aztec Athletic Center (AZAT)" style:UIAlertActionStyleDefault
+    UIAlertAction* ASUAction = [UIAlertAction actionWithTitle:@"Aztec Athletic Center (AZAT)" style:UIAlertActionStyleDefault
                                                                     handler:^(UIAlertAction * action) {
                                                                         
                                                                  self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
@@ -421,11 +470,18 @@
                                                                  item.imageName = @"AztecAthleticCenter";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.774006, -117.076262);
                                                                         
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
-                                                                 [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                 [self.mapAnnotations addObject:item];
-                                                                 [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                        MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                        you.title = @"green";
+                                                                        you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                        
+                                                                        // user tapped "Art Gallery" button in the bottom toolbar
+                                                                        [self gotoByAnnotationClass:[CustomAnnotation class]];
+                                                                        [self.mapAnnotations addObject:item];
+                                                                        [self.mapAnnotations addObject:you];
+                                                                        [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                        [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                        
+                                                                        [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                         
                                                                     }];
     
@@ -440,14 +496,21 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Aztec Mesa Modulars (AMSA)";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 //no image for this yet.
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.774513, -117.073475);
                                                                         
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
-                                                                 [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                 [self.mapAnnotations addObject:item];
-                                                                 [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                        MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                        you.title = @"green";
+                                                                        you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                        
+                                                                        // user tapped "Art Gallery" button in the bottom toolbar
+                                                                        [self gotoByAnnotationClass:[CustomAnnotation class]];
+                                                                        [self.mapAnnotations addObject:item];
+                                                                        [self.mapAnnotations addObject:you];
+                                                                        [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                        [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                        
+                                                                        [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                         
                                                                 }];
     
@@ -464,15 +527,23 @@
                                                                  item.imageName = @"AztecRecreationCenter";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776315, -117.076262);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
 
-    UIAlertAction* bioscienceCenterAction = [UIAlertAction actionWithTitle:@"Bioscience Center" style:UIAlertActionStyleDefault
+
+    UIAlertAction* bioscienceCenterAction = [UIAlertAction actionWithTitle:@"Aztec Student Union" style:UIAlertActionStyleDefault
                                                              handler:^(UIAlertAction * action) {
                                                                  
                                                                  self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
@@ -481,15 +552,22 @@
                                                                  
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                 item.place = @"Bioscience Center";
-                                                                 item.imageName = @"BIoScience";
-                                                                 item.coordinate = CLLocationCoordinate2DMake(32.778083, -117.071257);
+                                                                 item.place = @"Student Union";
+                                                                 item.imageName = @"ASU";
+                                                                 item.coordinate = CLLocationCoordinate2DMake(32.773870, -117.069830);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     UIAlertAction* blicksArtSuppliesAction = [UIAlertAction actionWithTitle:@"Blicks Art Supplies" style:UIAlertActionStyleDefault
@@ -501,15 +579,22 @@
                                                                  
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                 item.place = @"Hepner Hall";
+                                                                 item.place = @"Blicks Art Supplies";
                                                                  item.imageName = @"BlicksArt";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.77802, -117.072075);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     UIAlertAction* bookstoreAction = [UIAlertAction actionWithTitle:@"Bookstore (BOOK)" style:UIAlertActionStyleDefault
@@ -524,11 +609,18 @@
                                                                  item.imageName = @"BookStore";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.775496, -117.070215);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     UIAlertAction* calpulliAction = [UIAlertAction actionWithTitle:@"Calpulli Center (CLP)" style:UIAlertActionStyleDefault
@@ -540,14 +632,21 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Calpulli Center (CLP)";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"Calpulli";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.772598, -117.073472);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     UIAlertAction* chapultapecAction = [UIAlertAction actionWithTitle:@"Chapultapec Residence Hall (CHAP)" style:UIAlertActionStyleDefault
@@ -559,14 +658,21 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Chapultapec Residence Hall (CHAP)";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"Chapultapec";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.775503, -117.078917);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     UIAlertAction* chemSciLabAction = [UIAlertAction actionWithTitle:@"Chemical Sciences Laboratory" style:UIAlertActionStyleDefault
@@ -582,11 +688,18 @@
                                                                  item.imageName = @"ChemSciLab";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776523, -117.068682);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     UIAlertAction* childrenCenterAction = [UIAlertAction actionWithTitle:@"Children's Center" style:UIAlertActionStyleDefault
@@ -598,14 +711,21 @@
                                                                  // annotation for Hepner Hall
                                                                  CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                  item.place = @"Children's Center";
-                                                                 item.imageName = @"HepnerHall";
+                                                                 item.imageName = @"ChildrensCenter";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.773717, -117.066042);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     
@@ -622,11 +742,18 @@
                                                                  item.imageName = @"HepnerHall";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.775503, -117.078917);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                 item = nil;
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     
@@ -640,14 +767,21 @@
                                                               // annotation for Hepner Hall
                                                               CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                               item.place = @"College Square (CSQ)";
-                                                              item.imageName = @"HepnerHall";
+                                                              
                                                               item.coordinate = CLLocationCoordinate2DMake(32.771426, -117.06984);
                                                               
-                                                              // user tapped "Tea Gardon" button in the bottom toolbar
+                                                              MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                              you.title = @"green";
+                                                              you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                              
+                                                              // user tapped "Art Gallery" button in the bottom toolbar
                                                               [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                               [self.mapAnnotations addObject:item];
+                                                              [self.mapAnnotations addObject:you];
                                                               [self.campusMap addAnnotations:self.mapAnnotations];
-                                                              item = nil;
+                                                              [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                              
+                                                              [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                               
                                                           }];
     
@@ -664,15 +798,22 @@
                                                                     item.imageName = @"Communication";
                                                                     item.coordinate = CLLocationCoordinate2DMake(32.77627, -117.072608);
                                                                     
-                                                                    // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                    MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                    you.title = @"green";
+                                                                    you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                    
+                                                                    // user tapped "Art Gallery" button in the bottom toolbar
                                                                     [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                     [self.mapAnnotations addObject:item];
+                                                                    [self.mapAnnotations addObject:you];
                                                                     [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                    item = nil;
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                    
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                     
                                                                 }];
     
-    UIAlertAction* cuicalliSuitesAction = [UIAlertAction actionWithTitle:@"Cross Cultural Center (Aztec Student Union Rm 250)" style:UIAlertActionStyleDefault
+    UIAlertAction* cuicalliSuitesAction = [UIAlertAction actionWithTitle:@"Cross Cultural Center (ASU Rm 250)" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
                                                               
                                                               self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
@@ -681,39 +822,25 @@
                                                               
                                                               // annotation for Hepner Hall
                                                               CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                              item.place = @"Cholula Hall";
-                                                              item.imageName = @"HepnerHall";
+                                                              item.place = @"Cross Cultural Center";
+                                                              //no image yet
                                                               item.coordinate = CLLocationCoordinate2DMake(32.77405, -117.0697);
                                                               
-                                                              // user tapped "Tea Gardon" button in the bottom toolbar
+                                                              MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                              you.title = @"green";
+                                                              you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                              
+                                                              // user tapped "Art Gallery" button in the bottom toolbar
                                                               [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                               [self.mapAnnotations addObject:item];
+                                                              [self.mapAnnotations addObject:you];
                                                               [self.campusMap addAnnotations:self.mapAnnotations];
-                                                              item = nil;
+                                                              [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                              
+                                                              [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                               
                                                           }];
-    
-    UIAlertAction* departmentofPublicSafetyAction = [UIAlertAction actionWithTitle:@"Department of Public Safety" style:UIAlertActionStyleDefault
-                                                               handler:^(UIAlertAction * action) {
-                                                                   
-                                                                   self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-                                                                   [self.campusMap removeAnnotations:self.campusMap.annotations];
-                                                                   [self.mapAnnotations removeAllObjects];
-                                                                   
-                                                                   // annotation for Love Library
-                                                                   CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                   item.place = @"Department of Public Safety";
-                                                                   item.imageName = @"GatewayCenter";
-                                                                   item.coordinate = CLLocationCoordinate2DMake(32.774727, -117.07646);
-                                                                   
-                                                                   [self.mapAnnotations addObject:item];
-                                                                   
-                                                                   // user tapped "Tea Gardon" button in the bottom toolbar
-                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                   
-                                                                   
-                                                                   
-                                                               }];
+
     
     
     UIAlertAction* dramaticArtsAction = [UIAlertAction actionWithTitle:@"Dramatic Arts" style:UIAlertActionStyleDefault
@@ -725,14 +852,24 @@
                                                                
                                                                // annotation for Love Library
                                                                CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                               item.place = @"Gateway/KPBS";
-                                                               item.imageName = @"GatewayCenter";
+                                                               item.place = @"Dramatic Arts";
+                                                               item.imageName = @"TheatreArts";
                                                                item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                
                                                                [self.mapAnnotations addObject:item];
                                                                
-                                                               // user tapped "Tea Gardon" button in the bottom toolbar
+                                                               MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                               you.title = @"green";
+                                                               you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                               
+                                                               // user tapped "Art Gallery" button in the bottom toolbar
                                                                [self gotoByAnnotationClass:[CustomAnnotation class]];
+                                                               [self.mapAnnotations addObject:item];
+                                                               [self.mapAnnotations addObject:you];
+                                                               [self.campusMap addAnnotations:self.mapAnnotations];
+                                                               [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                               
+                                                               [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                
                                                                
                                                                
@@ -751,10 +888,18 @@
                                                                  item.imageName = @"EastCommons";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     
@@ -771,10 +916,18 @@
                                                                  item.imageName = @"EastCommons";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.775377, -117.069597);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     
@@ -788,13 +941,21 @@
                                                                 // annotation for Love Library
                                                                 CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                 item.place = @"Education & Business Administration";
-                                                                item.imageName = @"EastCommons";
-                                                                item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
+                                                                item.imageName = @"EduBusAdmin";
+                                                                item.coordinate = CLLocationCoordinate2DMake(32.775546, -117.068387);
                                                                 
-                                                                // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                you.title = @"green";
+                                                                you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                
+                                                                // user tapped "Art Gallery" button in the bottom toolbar
                                                                 [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                 [self.mapAnnotations addObject:item];
+                                                                [self.mapAnnotations addObject:you];
                                                                 [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                
+                                                                [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                 
                                                             }];
     
@@ -809,21 +970,29 @@
                                                                   
                                                                   // annotation for Love Library
                                                                   CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                  item.place = @"Fowler Athletic Center";
+                                                                  item.place = @"Engineering";
                                                                   item.imageName = @"HardyTower";
                                                                   item.coordinate = CLLocationCoordinate2DMake(32.777012, -117.072257);
                                                                   
-                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                   [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                   
                                                                   
                                                                   
                                                               }];
     
     
-    UIAlertAction* engineeringAction = [UIAlertAction actionWithTitle:@"Engineering Lab" style:UIAlertActionStyleDefault
+    UIAlertAction* engineeringAction = [UIAlertAction actionWithTitle:@"Engineering" style:UIAlertActionStyleDefault
                                                               handler:^(UIAlertAction * action) {
                                                                   
                                                                   self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
@@ -832,14 +1001,22 @@
                                                                   
                                                                   // annotation for Love Library
                                                                   CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                  item.place = @"KPBS Building";
-                                                                  item.imageName = @"KPBS";
-                                                                  item.coordinate = CLLocationCoordinate2DMake(32.77194, -117.072169);
+                                                                  item.place = @"Engineering";
+                                                                  item.imageName = @"EngineeringLab";
+                                                                  item.coordinate = CLLocationCoordinate2DMake(32.777269, -117.070009);
                                                                   
-                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                   [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                   
                                                                   
                                                               }];
@@ -853,14 +1030,22 @@
                                                                      
                                                                      // annotation for Love Library
                                                                      CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                     item.place = @"KPBS Building";
-                                                                     item.imageName = @"KPBS";
-                                                                     item.coordinate = CLLocationCoordinate2DMake(32.77194, -117.072169);
+                                                                     item.place = @"Engineering Lab";
+                                                                     item.imageName = @"EngineeringLab";
+                                                                     item.coordinate = CLLocationCoordinate2DMake(32.777269, -117.070009);
                                                                      
-                                                                     // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                     MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                     you.title = @"green";
+                                                                     you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                     
+                                                                     // user tapped "Art Gallery" button in the bottom toolbar
                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                      [self.mapAnnotations addObject:item];
+                                                                     [self.mapAnnotations addObject:you];
                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                     
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                      
                                                                      
                                                                  }];
@@ -874,14 +1059,22 @@
                                                                    
                                                                    // annotation for ife Sciences
                                                                    CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                   item.place = @"Gateway/KPBS";
-                                                                   item.imageName = @"GatewayCenter";
-                                                                   item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
+                                                                   item.place = @"ENS";
+                                                                   item.imageName = @"ENSr";
+                                                                   item.coordinate = CLLocationCoordinate2DMake(32.774673, -117.073241);
                                                                    
-                                                                   // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                   MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                   you.title = @"green";
+                                                                   you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                   
+                                                                   // user tapped "Art Gallery" button in the bottom toolbar
                                                                    [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                    [self.mapAnnotations addObject:item];
-                                                                   [self.campusMap addAnnotations:self.mapAnnotations];;
+                                                                   [self.mapAnnotations addObject:you];
+                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                   
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                    
                                                                    
                                                                    
@@ -889,32 +1082,10 @@
     
     
     
-    UIAlertAction* exerciseNutritionSciAnnexAction = [UIAlertAction actionWithTitle:@"Exercise and Nutritional Sciences Annex" style:UIAlertActionStyleDefault
-                                                          handler:^(UIAlertAction * action) {
-                                                        
-                                                              self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-                                                              [self.campusMap removeAnnotations:self.campusMap.annotations];
-                                                              [self.mapAnnotations removeAllObjects];
-                                                              
-                                                              // annotation for Love Library
-                                                              CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                              item.place = @"Love Library";
-                                                              item.imageName = @"LoveLibrary";
-                                                              item.coordinate = CLLocationCoordinate2DMake(32.774937, -117.071128);
-                                                              
-                                                              // user tapped "Tea Gardon" button in the bottom toolbar
-                                                              [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                              [self.mapAnnotations addObject:item];
-                                                              [self.campusMap addAnnotations:self.mapAnnotations];
-                                                              
-                                                             
-
-                                                          }];
-    
 
     
 
-    UIAlertAction* facilitiesServicesAction = [UIAlertAction actionWithTitle:@"Facilities Services" style:UIAlertActionStyleDefault
+    UIAlertAction* fowlerAthleticCenterAction = [UIAlertAction actionWithTitle:@"Fowler Athletic Center" style:UIAlertActionStyleDefault
                                                               handler:^(UIAlertAction * action) {
                                                                   
                                                               self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
@@ -923,14 +1094,22 @@
                                                                    
                                                               // annotation for Love Library
                                                               CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                              item.place = @"Gateway/KPBS";
-                                                              item.imageName = @"GatewayCenter";
-                                                              item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
+                                                              item.place = @"Fowler";
+                                                              item.imageName = @"Fowler";
+                                                              item.coordinate = CLLocationCoordinate2DMake(32.773453, -117.076334);
                                                                   
-                                                              // user tapped "Tea Gardon" button in the bottom toolbar
-                                                              [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                              [self.mapAnnotations addObject:item];
-                                                              [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
+                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
+                                                                  [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
+                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
    
                                                          }];
     
@@ -947,10 +1126,18 @@
                                                                          item.imageName = @"GatewayCenter";
                                                                          item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                          
-                                                                         // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                         MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                         you.title = @"green";
+                                                                         you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                         
+                                                                         // user tapped "Art Gallery" button in the bottom toolbar
                                                                          [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                          [self.mapAnnotations addObject:item];
+                                                                         [self.mapAnnotations addObject:you];
                                                                          [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                         [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                         
+                                                                         [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                          
                                                                      }];
     
@@ -963,18 +1150,26 @@
                                                                     
                                                                     // annotation for Love Library
                                                                     CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                    item.place = @"Gateway/KPBS";
+                                                                    item.place = @"Geography Annex";
                                                                     item.imageName = @"GatewayCenter";
                                                                     item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                     
-                                                                    // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                    MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                    you.title = @"green";
+                                                                    you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                    
+                                                                    // user tapped "Art Gallery" button in the bottom toolbar
                                                                     [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                     [self.mapAnnotations addObject:item];
+                                                                    [self.mapAnnotations addObject:you];
                                                                     [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                    
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                     
                                                                 }];
     
-    UIAlertAction* geographyAction = [UIAlertAction actionWithTitle:@"Geography/Mathematics/Computer Science" style:UIAlertActionStyleDefault
+    UIAlertAction* geographyAction = [UIAlertAction actionWithTitle:@"Geog/Math/CompSci" style:UIAlertActionStyleDefault
                                                                  handler:^(UIAlertAction * action) {
                                                                      
                                                                      self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
@@ -983,14 +1178,22 @@
                                                                      
                                                                      // annotation for Love Library
                                                                      CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                     item.place = @"Gateway/KPBS";
-                                                                     item.imageName = @"GatewayCenter";
+                                                                     item.place = @"Geog/Math/CompSci";
+                                                                     item.imageName = @"CompSci";
                                                                      item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                      
-                                                                     // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                     MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                     you.title = @"green";
+                                                                     you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                     
+                                                                     // user tapped "Art Gallery" button in the bottom toolbar
                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                      [self.mapAnnotations addObject:item];
+                                                                     [self.mapAnnotations addObject:you];
                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                     
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                      
                                                                  }];
     
@@ -1007,10 +1210,18 @@
                                                                      item.imageName = @"HardyTower";
                                                                      item.coordinate = CLLocationCoordinate2DMake(32.777012, -117.072257);
                                                                      
-                                                                     // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                     MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                     you.title = @"green";
+                                                                     you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                     
+                                                                     // user tapped "Art Gallery" button in the bottom toolbar
                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                      [self.mapAnnotations addObject:item];
+                                                                     [self.mapAnnotations addObject:you];
                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                     
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                      
                                                                  }];
     UIAlertAction* hepnerHallAction = [UIAlertAction actionWithTitle:@"Hepner Hall" style:UIAlertActionStyleDefault
@@ -1026,10 +1237,18 @@
                                                                  item.imageName = @"HepnerHall";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     
@@ -1048,10 +1267,18 @@
                                                                   item.imageName = @"OAT";
                                                                   item.coordinate = CLLocationCoordinate2DMake(32.770921, -117.069207);
                                                                   
-                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                   [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                   
                                                                   
                                                                   
@@ -1070,10 +1297,18 @@
                                                                  item.imageName = @"IndustrialTechnology";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776775, -117.069572);
                                                                  
-                                                                 // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  
                                                                  
@@ -1092,10 +1327,19 @@
                                                                            item.imageName = @"IndustrialTechnology";
                                                                            item.coordinate = CLLocationCoordinate2DMake(32.776775, -117.069572);
                                                                            
-                                                                           // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                           MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                           you.title = @"green";
+                                                                           you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                           
+                                                                           // user tapped "Art Gallery" button in the bottom toolbar
                                                                            [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                            [self.mapAnnotations addObject:item];
+                                                                           [self.mapAnnotations addObject:you];
                                                                            [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                           [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                           
+                                                                           [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                           
                                                                            
                                                                            
                                                                            
@@ -1118,56 +1362,55 @@
                                                                        item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                        
                                                                        
-                                                                       // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                       MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                       you.title = @"green";
+                                                                       you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                       
+                                                                       // user tapped "Art Gallery" button in the bottom toolbar
                                                                        [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                        [self.mapAnnotations addObject:item];
+                                                                       [self.mapAnnotations addObject:you];
                                                                        [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                       [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                       
+                                                                       [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                        
                                                                        
                                                                        
                                                                        
                                                                    }];
     
-    UIAlertAction* libraryAdditionAction = [UIAlertAction actionWithTitle:@"Library Addition" style:UIAlertActionStyleDefault
-                                                               handler:^(UIAlertAction * action) {
-                                                                   
-                                                                   self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-                                                                   [self.campusMap removeAnnotations:self.campusMap.annotations];
-                                                                   [self.mapAnnotations removeAllObjects];
-                                                                   
-                                                                   // annotation for Love Library
-                                                                   CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                   item.place = @"Life Sciences Building";
-                                                                   item.imageName = @"GatewayCenter";
-                                                                   item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
-                                                                   
-                                                                   
-                                                                   // user tapped "Tea Gardon" button in the bottom toolbar
-                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                   [self.mapAnnotations addObject:item];
-                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
 
-                                                                   
-                                                               }];
     
-    UIAlertAction* libraryBookDropAction = [UIAlertAction actionWithTitle:@"Library Book Drop" style:UIAlertActionStyleDefault
+    UIAlertAction* libraryBookDropAction = [UIAlertAction actionWithTitle:@"Library Book Drops" style:UIAlertActionStyleDefault
                                                                   handler:^(UIAlertAction * action) {
                                                                       
                                                                       self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
                                                                       [self.campusMap removeAnnotations:self.campusMap.annotations];
                                                                       [self.mapAnnotations removeAllObjects];
+                                                                     
+                                                                      MKPointAnnotation *bookDropOne = [[MKPointAnnotation alloc] init];
+                                                                      bookDropOne.title = @"Drive Up";
+                                                                      bookDropOne.coordinate = CLLocationCoordinate2DMake(32.772535, -117.072174);
                                                                       
-                                                                      // annotation for Love Library
-                                                                      CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                      item.place = @"Library Book Drop";
-                                                                      item.imageName = @"GatewayCenter";
-                                                                      item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
+                                                                      MKPointAnnotation *bookDropTwo = [[MKPointAnnotation alloc] init];
+                                                                      bookDropTwo.title = @"Walk Up";
+                                                                      bookDropTwo.coordinate = CLLocationCoordinate2DMake(32.775199, -117.070127);
                                                                       
                                                                       
-                                                                      // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                      MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                      you.title = @"green";
+                                                                      you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                      
+                                                                      // user tapped "Art Gallery" button in the bottom toolbar
                                                                       [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                      [self.mapAnnotations addObject:item];
+                                                                      [self.mapAnnotations addObject:bookDropOne];
+                                                                      [self.mapAnnotations addObject:bookDropTwo];
+                                                                      [self.mapAnnotations addObject:you];
                                                                       [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                      [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                      
+                                                                      [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                       
                                                                       
                                                                   }];
@@ -1187,10 +1430,18 @@
                                                            item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                            
                                                            
-                                                           // user tapped "Tea Gardon" button in the bottom toolbar
+                                                           MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                           you.title = @"green";
+                                                           you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                           
+                                                           // user tapped "Art Gallery" button in the bottom toolbar
                                                            [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                            [self.mapAnnotations addObject:item];
+                                                           [self.mapAnnotations addObject:you];
                                                            [self.campusMap addAnnotations:self.mapAnnotations];
+                                                           [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                           
+                                                           [_campusMap showAnnotations:_mapAnnotations animated:YES];
 
                                                            
                                                        }];
@@ -1205,14 +1456,22 @@
                                                                    // annotation for Love Library
                                                                    CustomAnnotation *item = [[CustomAnnotation alloc] init];
                                                                    item.place = @"Little Theater";
-                                                                   item.imageName = @"GatewayCenter";
-                                                                   item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
+                                                                   item.imageName = @"LittleTheatre";
+                                                                   item.coordinate = CLLocationCoordinate2DMake(32.776595, -117.07211);
                                                                    
                                                                    
-                                                                   // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                   MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                   you.title = @"green";
+                                                                   you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                   
+                                                                   // user tapped "Art Gallery" button in the bottom toolbar
                                                                    [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                    [self.mapAnnotations addObject:item];
+                                                                   [self.mapAnnotations addObject:you];
                                                                    [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                   
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                    
                                                                    
                                                                }];
@@ -1231,10 +1490,18 @@
                                                                    item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                    
                                                                    
-                                                                   // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                   MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                   you.title = @"green";
+                                                                   you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                   
+                                                                   // user tapped "Art Gallery" button in the bottom toolbar
                                                                    [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                    [self.mapAnnotations addObject:item];
+                                                                   [self.mapAnnotations addObject:you];
                                                                    [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                   
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                    
                                                                    
                                                                    
@@ -1255,10 +1522,18 @@
                                                                   item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                   
                                                                   
-                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                   [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
 
                                                                   
                                                               }];
@@ -1279,34 +1554,22 @@
                                                                   item.imageName = @"GatewayCenter";
                                                                   item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                   
-                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                   [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                   
                                                                   
                                                               }];
     
-    UIAlertAction* montezumaClassroomsAction = [UIAlertAction actionWithTitle:@"Montezuma Classrooms North/South" style:UIAlertActionStyleDefault
-                                                                    handler:^(UIAlertAction * action) {
-                                                                        
-                                                                        self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-                                                                        [self.campusMap removeAnnotations:self.campusMap.annotations];
-                                                                        [self.mapAnnotations removeAllObjects];
-                                                                        
-                                                                        // annotation for Love Library
-                                                                        CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                        item.place = @"Gateway/KPBS";
-                                                                        item.imageName = @"GatewayCenter";
-                                                                        item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
-                                                                        
-                                                                        // user tapped "Tea Gardon" button in the bottom toolbar
-                                                                        [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                        [self.mapAnnotations addObject:item];
-                                                                        [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                        
-                                                                        
-                                                                    }];
     
     UIAlertAction* nasatirHallAction = [UIAlertAction actionWithTitle:@"NasatirHall" style:UIAlertActionStyleDefault
                                                                  handler:^(UIAlertAction * action) {
@@ -1321,10 +1584,18 @@
                                                                      item.imageName = @"NasatirHall";
                                                                      item.coordinate = CLLocationCoordinate2DMake(32.777116, -117.07348);
                                                                      
-                                                                     // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                     MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                     you.title = @"green";
+                                                                     you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                     
+                                                                     // user tapped "Art Gallery" button in the bottom toolbar
                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                      [self.mapAnnotations addObject:item];
+                                                                     [self.mapAnnotations addObject:you];
                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                     
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                      
                                                                      
                                                                  }];
@@ -1342,10 +1613,18 @@
                                                                   item.imageName = @"NorthEducation";
                                                                   item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
                                                                   
-                                                                  // user tapped "Tea Gardon" button in the bottom toolbar
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                   [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                   
                                                                   
                                                               }];
@@ -1363,10 +1642,18 @@
                                                           item.imageName = @"OlmecaHall";
                                                           item.coordinate = CLLocationCoordinate2DMake(32.772053, -117.06844);
                                                           
-                                                          // user tapped "Viejas Arena" button in the bottom toolbar
+                                                          MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                          you.title = @"green";
+                                                          you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                          
+                                                          // user tapped "Art Gallery" button in the bottom toolbar
                                                           [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                           [self.mapAnnotations addObject:item];
+                                                          [self.mapAnnotations addObject:you];
                                                           [self.campusMap addAnnotations:self.mapAnnotations];
+                                                          [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                          
+                                                          [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                           
                                                           
                                                       }];
@@ -1385,10 +1672,18 @@
                                                                      item.imageName = @"OAT";
                                                                      item.coordinate = CLLocationCoordinate2DMake(332.77415, -117.0713);
                                                                      
-                                                                     // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                     MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                     you.title = @"green";
+                                                                     you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                     
+                                                                     // user tapped "Art Gallery" button in the bottom toolbar
                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                      [self.mapAnnotations addObject:item];
+                                                                     [self.mapAnnotations addObject:you];
                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                     
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                      
                                                                      
                                                                  }];
@@ -1408,10 +1703,18 @@
                                                           item.imageName = @"OAT";
                                                           item.coordinate = CLLocationCoordinate2DMake(332.77415, -117.0713);
                                                           
-                                                          // user tapped "Viejas Arena" button in the bottom toolbar
+                                                          MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                          you.title = @"green";
+                                                          you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                          
+                                                          // user tapped "Art Gallery" button in the bottom toolbar
                                                           [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                           [self.mapAnnotations addObject:item];
+                                                          [self.mapAnnotations addObject:you];
                                                           [self.campusMap addAnnotations:self.mapAnnotations];
+                                                          [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                          
+                                                          [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                           
                                                           
                                                       }];
@@ -1429,10 +1732,18 @@
                                                                        item.imageName = @"OAT";
                                                                        item.coordinate = CLLocationCoordinate2DMake(332.77415, -117.0713);
                                                                        
-                                                                       // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                       MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                       you.title = @"green";
+                                                                       you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                       
+                                                                       // user tapped "Art Gallery" button in the bottom toolbar
                                                                        [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                        [self.mapAnnotations addObject:item];
+                                                                       [self.mapAnnotations addObject:you];
                                                                        [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                       [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                       
+                                                                       [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                        
                                                                        
                                                                    }];
@@ -1450,10 +1761,18 @@
                                                                   item.imageName = @"PetersonGym";
                                                                   item.coordinate = CLLocationCoordinate2DMake(32.774006, -117.076262);
                                                                   
-                                                                  // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                  MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                  you.title = @"green";
+                                                                  you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                  
+                                                                  // user tapped "Art Gallery" button in the bottom toolbar
                                                                   [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                   [self.mapAnnotations addObject:item];
+                                                                  [self.mapAnnotations addObject:you];
                                                                   [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                  
+                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                   
                                                                   
                                                               }];
@@ -1474,10 +1793,18 @@
                                                                        item.imageName = @"PhysicsAstronomy";
                                                                        item.coordinate = CLLocationCoordinate2DMake(32.776268, -117.070858);
                                                                        
-                                                                       // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                       MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                       you.title = @"green";
+                                                                       you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                       
+                                                                       // user tapped "Art Gallery" button in the bottom toolbar
                                                                        [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                        [self.mapAnnotations addObject:item];
+                                                                       [self.mapAnnotations addObject:you];
                                                                        [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                       [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                       
+                                                                       [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                        
                                                                        
                                                                    }];
@@ -1498,10 +1825,18 @@
                                                                  item.imageName = @"PFSA";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776987, -117.072515);
                                                                  
-                                                                 // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  
                                                              }];
@@ -1519,10 +1854,18 @@
                                                                           item.imageName = @"AztecSculpture";
                                                                           item.coordinate = CLLocationCoordinate2DMake(32.774655, -117.069685);
                                                                           
-                                                                          // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                          MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                          you.title = @"green";
+                                                                          you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                          
+                                                                          // user tapped "Art Gallery" button in the bottom toolbar
                                                                           [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                           [self.mapAnnotations addObject:item];
+                                                                          [self.mapAnnotations addObject:you];
                                                                           [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                          [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                          
+                                                                          [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                           
                                                                           
                                                                       }];
@@ -1540,10 +1883,18 @@
                                                                                item.imageName = @"PublicSafety";
                                                                                item.coordinate = CLLocationCoordinate2DMake(32.774642, -117.076433);
                                                                                
-                                                                               // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                               MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                               you.title = @"green";
+                                                                               you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                               
+                                                                               // user tapped "Art Gallery" button in the bottom toolbar
                                                                                [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                                [self.mapAnnotations addObject:item];
+                                                                               [self.mapAnnotations addObject:you];
                                                                                [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                               [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                               
+                                                                               [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                                
                                                                                
                                                                            }];
@@ -1561,10 +1912,18 @@
                                                                    item.imageName = @"ScrippsCottage";
                                                                    item.coordinate = CLLocationCoordinate2DMake(32.775688, -117.072973);
                                                                    
-                                                                   // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                   MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                   you.title = @"green";
+                                                                   you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                   
+                                                                   // user tapped "Art Gallery" button in the bottom toolbar
                                                                    [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                    [self.mapAnnotations addObject:item];
+                                                                   [self.mapAnnotations addObject:you];
                                                                    [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                   
+                                                                   [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                    
                                                                    
                                                                }];
@@ -1582,34 +1941,22 @@
                                                                      item.imageName = @"SpeechLangHear";
                                                                      item.coordinate = CLLocationCoordinate2DMake(32.772183, -117.071745);
                                                                      
-                                                                     // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                     MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                     you.title = @"green";
+                                                                     you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                     
+                                                                     // user tapped "Art Gallery" button in the bottom toolbar
                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                      [self.mapAnnotations addObject:item];
+                                                                     [self.mapAnnotations addObject:you];
                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                     
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                      
                                                                      
                                                                  }];
     
-    UIAlertAction* stormHallAction = [UIAlertAction actionWithTitle:@"Storm Hall" style:UIAlertActionStyleDefault
-                                                            handler:^(UIAlertAction * action) {
-                                                                
-                                                                self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-                                                                [self.campusMap removeAnnotations:self.campusMap.annotations];
-                                                                [self.mapAnnotations removeAllObjects];
-                                                                
-                                                                // annotation for Love Library
-                                                                CustomAnnotation *item = [[CustomAnnotation alloc] init];
-                                                                item.place = @"Gateway/KPBS";
-                                                                item.imageName = @"GatewayCenter";
-                                                                item.coordinate = CLLocationCoordinate2DMake(32.777003, -117.071654);
-                                                                
-                                                                // user tapped "Tea Gardon" button in the bottom toolbar
-                                                                [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                [self.mapAnnotations addObject:item];
-                                                                [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                
-                                                                
-                                                            }];
     
     UIAlertAction* stormHallWestAction = [UIAlertAction actionWithTitle:@"Storm Hall West" style:UIAlertActionStyleDefault
                                                              handler:^(UIAlertAction * action) {
@@ -1624,10 +1971,18 @@
                                                                  item.imageName = @"ViejasArena";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
                                                                  
-                                                                 // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  
                                                              }];
@@ -1645,34 +2000,21 @@
                                                                  item.imageName = @"ViejasArena";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
                                                                  
-                                                                 // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                              }];
     
-    UIAlertAction* tenochaResHallAction = [UIAlertAction actionWithTitle:@"Tenocha Residence Hall" style:UIAlertActionStyleDefault
-                                                                  handler:^(UIAlertAction * action) {
-                                                                      
-                                                                      self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-                                                                      [self.campusMap removeAnnotations:self.campusMap.annotations];
-                                                                      [self.mapAnnotations removeAllObjects];
-                                                                      
-                                                                      // annotation for Love Library
-                                                                      CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                      item.place = @"Viejas Arena";
-                                                                      item.imageName = @"ViejasArena";
-                                                                      item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
-                                                                      
-                                                                      // user tapped "Viejas Arena" button in the bottom toolbar
-                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
-                                                                      [self.mapAnnotations addObject:item];
-                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
-                                                                      
-                                                                      
-                                                                  }];
     
     UIAlertAction* transitCenterAction = [UIAlertAction actionWithTitle:@"Transit Center" style:UIAlertActionStyleDefault
                                                                  handler:^(UIAlertAction * action) {
@@ -1687,10 +2029,18 @@
                                                                      item.imageName = @"ViejasArena";
                                                                      item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
                                                                      
-                                                                     // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                     MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                     you.title = @"green";
+                                                                     you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                     
+                                                                     // user tapped "Art Gallery" button in the bottom toolbar
                                                                      [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                      [self.mapAnnotations addObject:item];
+                                                                     [self.mapAnnotations addObject:you];
                                                                      [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                     
+                                                                     [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                      
                                                                      
                                                                  }];
@@ -1708,10 +2058,18 @@
                                                                     item.imageName = @"ViejasArena";
                                                                     item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
                                                                     
-                                                                    // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                    MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                    you.title = @"green";
+                                                                    you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                    
+                                                                    // user tapped "Art Gallery" button in the bottom toolbar
                                                                     [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                     [self.mapAnnotations addObject:item];
+                                                                    [self.mapAnnotations addObject:you];
                                                                     [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                    
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                     
                                                                     
                                                                 }];
@@ -1725,14 +2083,22 @@
                                                                     
                                                                     // annotation for Love Library
                                                                     CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                    item.place = @"Viejas Arena";
-                                                                    item.imageName = @"ViejasArena";
-                                                                    item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
+                                                                    item.place = @"University Towers";
+                                                                    item.imageName = @"UniversityTowers";
+                                                                    item.coordinate = CLLocationCoordinate2DMake(32.770587, -117.075205);
                                                                     
-                                                                    // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                    MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                    you.title = @"green";
+                                                                    you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                    
+                                                                    // user tapped "Art Gallery" button in the bottom toolbar
                                                                     [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                     [self.mapAnnotations addObject:item];
+                                                                    [self.mapAnnotations addObject:you];
                                                                     [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                    
+                                                                    [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                     
                                                                     
                                                                 }];
@@ -1750,10 +2116,18 @@
                                                                       item.imageName = @"ViejasArena";
                                                                       item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
                                                                       
-                                                                      // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                      MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                      you.title = @"green";
+                                                                      you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                      
+                                                                      // user tapped "Art Gallery" button in the bottom toolbar
                                                                       [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                       [self.mapAnnotations addObject:item];
+                                                                      [self.mapAnnotations addObject:you];
                                                                       [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                      [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                      
+                                                                      [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                       
                                                                       
                                                                   }];
@@ -1767,14 +2141,22 @@
                                                                       
                                                                       // annotation for Love Library
                                                                       CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                      item.place = @"Viejas Arena";
-                                                                      item.imageName = @"ViejasArena";
+                                                                      item.place = @"Villa Alvarado Res. Hall";
+                                                                      // no image
                                                                       item.coordinate = CLLocationCoordinate2DMake(32.773645, -117.07543);
                                                                       
-                                                                      // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                      MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                      you.title = @"green";
+                                                                      you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                      
+                                                                      // user tapped "Art Gallery" button in the bottom toolbar
                                                                       [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                       [self.mapAnnotations addObject:item];
+                                                                      [self.mapAnnotations addObject:you];
                                                                       [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                      [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                      
+                                                                      [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                       
                                                                       
                                                                   }];
@@ -1792,10 +2174,18 @@
                                                                  item.imageName = @"WestCommons";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776227, -117.073437);
                                                                  
-                                                                 // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  
                                                              }];
@@ -1809,14 +2199,22 @@
                                                                  
                                                                  // annotation for Love Library
                                                                  CustomAnnotation *item= [[CustomAnnotation alloc] init];
-                                                                 item.place = @"West Commons (WC)";
-                                                                 item.imageName = @"WestCommons";
+                                                                 item.place = @"Zura Hall";
+                                                                 item.imageName = @"ZuraHall";
                                                                  item.coordinate = CLLocationCoordinate2DMake(32.776227, -117.073437);
                                                                  
-                                                                 // user tapped "Viejas Arena" button in the bottom toolbar
+                                                                 MKPointAnnotation *you = [[MKPointAnnotation alloc] init];
+                                                                 you.title = @"green";
+                                                                 you.coordinate = CLLocationCoordinate2DMake(_campusMap.userLocation.coordinate.latitude, _campusMap.userLocation.coordinate.longitude);
+                                                                 
+                                                                 // user tapped "Art Gallery" button in the bottom toolbar
                                                                  [self gotoByAnnotationClass:[CustomAnnotation class]];
                                                                  [self.mapAnnotations addObject:item];
+                                                                 [self.mapAnnotations addObject:you];
                                                                  [self.campusMap addAnnotations:self.mapAnnotations];
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
+                                                                 
+                                                                 [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  
                                                              }];
@@ -1830,9 +2228,10 @@
     [alert addAction:artAction];
     [alert addAction:artGalleryAction];
     [alert addAction:artsandLettersAction];
-    [alert addAction:aztecAthleticCenterAction];
+    [alert addAction:fowlerAthleticCenterAction];
     [alert addAction:aztecMesaModularsAction];
     [alert addAction:ARCAction];
+    [alert addAction:ASUAction];
     [alert addAction:bioscienceCenterAction];
     [alert addAction:blicksArtSuppliesAction];
     [alert addAction:bookstoreAction];
@@ -1844,7 +2243,6 @@
     [alert addAction:collegeSquareAction];
     [alert addAction:communicationAction];
     [alert addAction:cuicalliSuitesAction];
-    [alert addAction:departmentofPublicSafetyAction];
     [alert addAction:dramaticArtsAction];
     [alert addAction:educationAction];
     [alert addAction:eduBusAdminAction];
@@ -1852,8 +2250,6 @@
     [alert addAction:eastCommonAction];
     [alert addAction:engineeringAction];
     [alert addAction:exerciseNutritionSciAction];
-    [alert addAction:exerciseNutritionSciAnnexAction];
-    [alert addAction:facilitiesServicesAction];
     [alert addAction:folwerAthleticCenterAction];
     [alert addAction:gatewayCenterAction];
     [alert addAction:geographyAction];
@@ -1864,37 +2260,30 @@
     [alert addAction:industrialTechnologyAction];
     [alert addAction:internationalStudentCenterAction];
     [alert addAction:kpbsAction];
-    [alert addAction:libraryAdditionAction];
     [alert addAction:libraryBookDropAction];
     [alert addAction:lifeSciencesAction];
     [alert addAction:littleTheaterAction];
     [alert addAction:loveLibraryAction];
     [alert addAction:mayaResidenceHallAction];
     [alert addAction:manchesterHallAction];
-    [alert addAction:montezumaClassroomsAction];
     [alert addAction:northEducationAction];
     [alert addAction:nasatirHallAction];
     [alert addAction:oatAction];
     [alert addAction:olmecaResHallAction];
-    [alert addAction:physicalSciencesAction];
-    [alert addAction:publicSafetyAction];
-    [alert addAction:universityTowerAction];
-    [alert addAction:westCommonAction];
-    [alert addAction:nasatirHallAction];
     [alert addAction:parmaAlumniAction];
     [alert addAction:petersonGymAction];
     [alert addAction:physicalSciencesAction];
     [alert addAction:physicsAstroAction];
     [alert addAction:profStudiesFineArtsAction];
     [alert addAction:prospectiveStudentCenterAction];
+    [alert addAction:publicSafetyAction];
     [alert addAction:scrippsCottageAction];
     [alert addAction:speechLangAction];
-    [alert addAction:stormHallAction];
     [alert addAction:stormHallWestAction];
     [alert addAction:studentServicesAction];
-    [alert addAction:tenochaResHallAction];
     [alert addAction:transitCenterAction];
     [alert addAction:tulaCommunityAction];
+    [alert addAction:universityTowerAction];
     [alert addAction:viejasArenaAction];
     [alert addAction:villaAlvaradoAction];
     [alert addAction:westCommonAction];

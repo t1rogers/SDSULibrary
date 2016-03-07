@@ -4,14 +4,9 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>webcredentials:example.com</string>
-		<string>libpac.sdsu.edu</string>
+		<string>webcredentials:libproxy.sdsu.edu</string>
 	</array>
 	<key>inter-app-audio</key>
 	<true/>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>$(AppIdentifierPrefix)edu.sdsu.library</string>
-	</array>
 </dict>
 </plist>

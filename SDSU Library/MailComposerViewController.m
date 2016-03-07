@@ -53,7 +53,7 @@
 	
     
 	// Set up recipients
-	NSArray *toRecipients = [NSArray arrayWithObject:@"eref@rohan.sdsu.edu"];
+	NSArray *toRecipients = [NSArray arrayWithObject:@"eref@mail.sdsu.edu"];
     
 	[picker setToRecipients:toRecipients];
     
@@ -98,7 +98,7 @@
 // Launches the Mail application on the device.
 -(void)launchMailAppOnDevice
 {
-	NSString *recipients = @"mailto:eref@rohan.sdsu.edu&subject=Message from the iPhone App";
+	NSString *recipients = @"mailto:eref@mail.sdsu.edu&subject=Message from the iOS App";
     
 	
 	NSString *email = [NSString stringWithFormat:@"%@", recipients];

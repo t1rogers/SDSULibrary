@@ -36,7 +36,7 @@
     [super viewDidLoad];
     
     self.bookList = [NSMutableArray array];
-    self.title = @"Chemistry";
+    self.title = @"`Business";
     self.tableView.estimatedRowHeight = 100.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     /*
@@ -45,7 +45,7 @@
      IMPORTANT! The main thread of the application should never be blocked!
      Also, avoid synchronous network access on any thread.
      */
-    static NSString *feedURLString = @"http://libpac.sdsu.edu/feeds/.xml";
+    static NSString *feedURLString = @"http://libpac.sdsu.edu/feeds/bus.xml";
     NSURLRequest *bookURLRequest =
     [NSURLRequest requestWithURL:[NSURL URLWithString:feedURLString]];
     self.bookFeedConnection = [[NSURLConnection alloc] initWithRequest:bookURLRequest delegate:self];

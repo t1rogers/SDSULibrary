@@ -35,7 +35,7 @@
     [super viewDidLoad];
     
     self.bookList = [NSMutableArray array];
-    self.title = @"Chemistry";
+    self.title = @"Biology";
     self.tableView.estimatedRowHeight = 100.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     /*
