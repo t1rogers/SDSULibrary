@@ -16,6 +16,7 @@
 @property (nonatomic, readwrite) NSString *imageName;
 @property (nonatomic, readwrite) CLLocationCoordinate2D coordinate;
 
+
 + (MKAnnotationView *)createViewAnnotationForMapView:(MKMapView *)mapView annotation:(id <MKAnnotation>)annotation;
 
 

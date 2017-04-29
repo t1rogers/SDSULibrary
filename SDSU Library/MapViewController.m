@@ -253,10 +253,9 @@
                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
                                                                  
                                                                  [_campusMap showAnnotations:_mapAnnotations animated:YES];
-                
-
                                                                  
                                                              }];
+    
     UIAlertAction* administrationAction = [UIAlertAction actionWithTitle:@"Administration (AD)" style:UIAlertActionStyleDefault
                                                              handler:^(UIAlertAction * administrationAction) {
 

@@ -111,7 +111,7 @@
     progressView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:progressView];
     [NSThread detachNewThreadSelector:@selector(downsize:) toTarget:self withObject:nil];
-    self.title = @"Basement Library Addition";
+    
 }
 
 - (void)viewDidUnload {
