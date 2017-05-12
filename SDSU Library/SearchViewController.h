@@ -10,9 +10,7 @@
 
 @interface SearchViewController : UIViewController 
 
--(IBAction)pacSearchViewController;
--(IBAction)xerxesSearchViewController;
--(IBAction)readingListController;
+-(IBAction)oneSearchViewController;
 -(IBAction)dbazController;
 -(IBAction)researchGuidesController;
 

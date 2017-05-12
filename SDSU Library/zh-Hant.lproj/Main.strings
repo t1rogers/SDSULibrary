@@ -1,0 +1,69 @@
+
+/* Class = "UIButton"; normalTitle = "MY FAVORITES"; ObjectID = "2Cm-qk-5lP"; */
+"2Cm-qk-5lP.normalTitle" = "MY FAVORITES";
+
+/* Class = "UIButton"; normalTitle = "Email the Reference Desk"; ObjectID = "9il-YL-HEk"; */
+"9il-YL-HEk.normalTitle" = "Email the Reference Desk";
+
+/* Class = "UISegmentedControl"; AIM-qB-ROA.segmentTitles[0] = "Regular"; ObjectID = "AIM-qB-ROA"; */
+"AIM-qB-ROA.segmentTitles[0]" = "Regular";
+
+/* Class = "UISegmentedControl"; AIM-qB-ROA.segmentTitles[1] = "Satellite"; ObjectID = "AIM-qB-ROA"; */
+"AIM-qB-ROA.segmentTitles[1]" = "Satellite";
+
+/* Class = "UITabBarItem"; title = "Library Maps"; ObjectID = "Boh-57-6Pu"; */
+"Boh-57-6Pu.title" = "Library Maps";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CsC-Sl-imO"; */
+"CsC-Sl-imO.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Campus Wayfinder"; ObjectID = "D7p-i9-5is"; */
+"D7p-i9-5is.title" = "Campus Wayfinder";
+
+/* Class = "UITabBarItem"; title = "Maps"; ObjectID = "Fx5-al-dzL"; */
+"Fx5-al-dzL.title" = "Maps";
+
+/* Class = "UIViewController"; title = "About"; ObjectID = "GSo-VB-azB"; */
+"GSo-VB-azB.title" = "About";
+
+/* Class = "UIViewController"; title = "Campus Map"; ObjectID = "K3I-hd-8SJ"; */
+"K3I-hd-8SJ.title" = "Campus Map";
+
+/* Class = "UIButton"; normalTitle = "Choose a Campus Building"; ObjectID = "KEH-VI-lJi"; */
+"KEH-VI-lJi.normalTitle" = "Choose a Campus Building";
+
+/* Class = "UITabBarItem"; title = "Hours"; ObjectID = "Kdz-Hp-5gl"; */
+"Kdz-Hp-5gl.title" = "Hours";
+
+/* Class = "UITextView"; text = "San Diego State University Library is your home to books, journals and media at SDSU.  This app was made to help you: search the mobile catalog;  review subject-specific lists of new books added to the collection; use the guide to call numbers when you browse the book stacks and use the maps to find a book by call number or find a place to study.  FInally, if you need, please feel free to email us. "; ObjectID = "Po8-IL-dlW"; */
+"Po8-IL-dlW.text" = "San Diego State University Library is your home to books, journals and media at SDSU.  This app was made to help you: search the mobile catalog;  review subject-specific lists of new books added to the collection; use the guide to call numbers when you browse the book stacks and use the maps to find a book by call number or find a place to study.  FInally, if you need, please feel free to email us. ";
+
+/* Class = "UIButton"; normalTitle = "Search the Catalog"; ObjectID = "Rtj-lN-kNR"; */
+"Rtj-lN-kNR.normalTitle" = "Search the Catalog";
+
+/* Class = "UIViewController"; title = "Detail"; ObjectID = "VAK-N5-bLY"; */
+"VAK-N5-bLY.title" = "Detail";
+
+/* Class = "UIButton"; normalTitle = "Databases"; ObjectID = "Yev-93-7fG"; */
+"Yev-93-7fG.normalTitle" = "Databases";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "b16-XE-kV6"; */
+"b16-XE-kV6.title" = "About";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "etO-3K-OfZ"; */
+"etO-3K-OfZ.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "MY ACCOUNT"; ObjectID = "g9K-L0-11k"; */
+"g9K-L0-11k.normalTitle" = "MY ACCOUNT";
+
+/* Class = "UINavigationItem"; title = "Call Numbers"; ObjectID = "o2W-a7-7td"; */
+"o2W-a7-7td.title" = "Call Numbers";
+
+/* Class = "UITabBarItem"; title = "Call Numbers"; ObjectID = "qJR-of-igq"; */
+"qJR-of-igq.title" = "Call Numbers";
+
+/* Class = "UIButton"; normalTitle = "Research Guides"; ObjectID = "st6-SS-f31"; */
+"st6-SS-f31.normalTitle" = "Research Guides";
+
+/* Class = "UINavigationItem"; title = "Hours"; ObjectID = "zmc-u4-cCy"; */
+"zmc-u4-cCy.title" = "Hours";

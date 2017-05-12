@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     xmlParser = nil;
-    xmlParser = [[HoursXMLParser alloc] loadXMLByURL:@"http://library.sdsu.edu/guides/rss/hours_library.rss"];
+    xmlParser = [[HoursXMLParser alloc] loadXMLByURL:@"https://library.sdsu.edu/guides/rss/hours_library.rss"];
     UIEdgeInsets inset = UIEdgeInsetsMake(10, 0, 0, 0);
     self.tableView.contentInset = inset;
 

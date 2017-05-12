@@ -21,7 +21,7 @@
     
     
     xmlParser = nil;
-    xmlParser = [[HoursXMLParser alloc] loadXMLByURL:@"http://library.sdsu.edu/guides/rss/hours_scua.rss"];
+    xmlParser = [[HoursXMLParser alloc] loadXMLByURL:@"https://library.sdsu.edu/guides/rss/hours_scua.rss"];
     
     
     UIEdgeInsets inset = UIEdgeInsetsMake(10, 0, 0, 0);

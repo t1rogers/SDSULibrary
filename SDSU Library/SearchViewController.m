@@ -17,26 +17,13 @@
 
 }
 
--(void)pacSearchViewController {
-    NSURL *URL = [NSURL URLWithString:@"http://m.libpac.sdsu.edu"];
+-(void)oneSearchViewController {
+    NSURL *URL = [NSURL URLWithString:@"https://sdsu-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=01CALS_SDL&sortby=rank&lang=en_US"];
     SFSafariViewController *webViewController = [[SFSafariViewController alloc] initWithURL:URL];
     webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
     [self presentViewController:webViewController animated:YES completion:NULL];
 }
 
--(void)xerxesSearchViewController {
-    NSURL *URL = [NSURL URLWithString:@"http://library.calstate.edu/sandiego/articles/"];
-    SFSafariViewController *webViewController = [[SFSafariViewController alloc] initWithURL:URL];
-    webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
-    [self presentViewController:webViewController animated:YES completion:NULL];
-}
-
--(void)readingListController {
-    NSURL *URL = [NSURL URLWithString:@"https://library.calstate.edu/sandiego/authenticate/login?return=%2Fsandiego%2F&is_mobile=0"];
-    SFSafariViewController *webViewController = [[SFSafariViewController alloc] initWithURL:URL];
-    webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
-    [self presentViewController:webViewController animated:YES completion:NULL];
-}
 
 -(void)dbazController {
     NSURL *URL = [NSURL URLWithString:@"http://library.sdsu.edu/guides/dbaz.php"];
