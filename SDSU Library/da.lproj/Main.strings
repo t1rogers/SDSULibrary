@@ -39,7 +39,7 @@
 "Po8-IL-dlW.text" = "San Diego State University Library is your home to books, journals and media at SDSU.  This app was made to help you: search the mobile catalog;  review subject-specific lists of new books added to the collection; use the guide to call numbers when you browse the book stacks and use the maps to find a book by call number or find a place to study.  FInally, if you need, please feel free to email us. ";
 
 /* Class = "UIButton"; normalTitle = "Search the Catalog"; ObjectID = "Rtj-lN-kNR"; */
-"Rtj-lN-kNR.normalTitle" = "Search the Catalog";
+"Rtj-lN-kNR.normalTitle" = "SDSU OneSearch";
 
 /* Class = "UIViewController"; title = "Detail"; ObjectID = "VAK-N5-bLY"; */
 "VAK-N5-bLY.title" = "Detail";
@@ -51,7 +51,7 @@
 "b16-XE-kV6.title" = "About";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "etO-3K-OfZ"; */
-"etO-3K-OfZ.title" = "Item";
+"etO-3K-OfZ.title" = "My Account";
 
 /* Class = "UIButton"; normalTitle = "MY ACCOUNT"; ObjectID = "g9K-L0-11k"; */
 "g9K-L0-11k.normalTitle" = "MY ACCOUNT";
