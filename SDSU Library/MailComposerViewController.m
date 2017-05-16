@@ -49,7 +49,7 @@
 	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
 	picker.mailComposeDelegate = self;
 	
-	[picker setSubject:@"Message from the iPhone App"];
+	[picker setSubject:@"Message from the iOS App"];
 	
     
 	// Set up recipients
@@ -102,7 +102,7 @@
     
 	
 	NSString *email = [NSString stringWithFormat:@"%@", recipients];
-	email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	email = [email stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
 	
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:email]];
 }

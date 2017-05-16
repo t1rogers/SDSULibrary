@@ -210,12 +210,12 @@ static NSArray *_allCallNumbers;
         }
         
         if (!self.stripRichFormatting) {
-            NSMutableAttributedString *attributedTextHolder = [[NSMutableAttributedString alloc] initWithFileURL:url options:@{} documentAttributes:nil error:nil];
+            NSMutableAttributedString *attributedTextHolder = [[NSMutableAttributedString alloc] initWithURL:url options:@{} documentAttributes:nil error:nil];
             [attributedTextHolder addAttribute:NSFontAttributeName value:[UIFont preferredFontForTextStyle:UIFontTextStyleBody] range:NSMakeRange(0, attributedTextHolder.length)];
             
             _attributedText = [attributedTextHolder copy];
         } else {
-            NSString *newFlatText = [[[NSAttributedString alloc] initWithFileURL:url options:@{} documentAttributes:nil error:nil] string];
+            NSString *newFlatText = [[[NSAttributedString alloc] initWithURL:url options:@{} documentAttributes:nil error:nil] string];
             _attributedText = [[NSAttributedString alloc] initWithString:newFlatText attributes:@{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody]}];
         }
     }
