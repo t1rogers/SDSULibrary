@@ -6,7 +6,5 @@
 	<array>
 		<string>webcredentials:libproxy.sdsu.edu</string>
 	</array>
-	<key>inter-app-audio</key>
-	<true/>
 </dict>
 </plist>

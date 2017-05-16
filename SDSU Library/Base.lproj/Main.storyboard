@@ -365,16 +365,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Po8-IL-dlW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Po8-IL-dlW">
                                 <rect key="frame" x="0.0" y="139" width="375" height="182"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">San Diego State University Library is your home to books, journals and media at SDSU.  This app was made to help you: search the mobile catalog;  review subject-specific lists of new books added to the collection; use the guide to call numbers when you browse the book stacks and use the maps to find a book by call number or find a place to study.  FInally, if you need, please feel free to email us. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" alpha="0.89999999999999991" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9il-YL-HEk">
+                            <button opaque="NO" alpha="0.89999999999999991" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9il-YL-HEk">
                                 <rect key="frame" x="0.0" y="382" width="375" height="179"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="e4h-P2-eoM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                 <state key="normal" title="Email the Reference Desk">
@@ -388,14 +391,13 @@
                         <color key="backgroundColor" red="0.57254901960000004" green="0.031372549020000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.57254901960000004" green="0.031372549020000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9il-YL-HEk" firstAttribute="leading" secondItem="Po8-IL-dlW" secondAttribute="leading" id="Hid-x3-bqo"/>
-                            <constraint firstItem="Po8-IL-dlW" firstAttribute="top" secondItem="hGd-gL-PvT" secondAttribute="top" id="IeU-QQ-tds"/>
-                            <constraint firstAttribute="trailing" secondItem="Po8-IL-dlW" secondAttribute="trailing" id="KDt-Ok-ckv"/>
-                            <constraint firstItem="9il-YL-HEk" firstAttribute="leading" secondItem="hGd-gL-PvT" secondAttribute="leading" id="V0W-ee-EkB"/>
-                            <constraint firstItem="Po8-IL-dlW" firstAttribute="trailing" secondItem="9il-YL-HEk" secondAttribute="trailing" id="boM-or-Dbk"/>
-                            <constraint firstItem="3Px-cr-uAm" firstAttribute="top" secondItem="Po8-IL-dlW" secondAttribute="bottom" constant="111" id="cFO-XQ-fve"/>
-                            <constraint firstItem="9il-YL-HEk" firstAttribute="top" secondItem="7o2-bY-WCF" secondAttribute="bottom" constant="419" id="hAY-Xv-NnU"/>
-                            <constraint firstItem="9il-YL-HEk" firstAttribute="bottom" secondItem="3Px-cr-uAm" secondAttribute="top" id="j8D-3S-EJr"/>
+                            <constraint firstItem="3Px-cr-uAm" firstAttribute="top" secondItem="9il-YL-HEk" secondAttribute="bottom" constant="57" id="5Oc-lh-ehe"/>
+                            <constraint firstItem="Po8-IL-dlW" firstAttribute="leading" secondItem="hGd-gL-PvT" secondAttribute="leading" id="63S-F7-NQ4"/>
+                            <constraint firstAttribute="trailing" secondItem="Po8-IL-dlW" secondAttribute="trailing" id="EqG-mI-Hmi"/>
+                            <constraint firstItem="Po8-IL-dlW" firstAttribute="top" secondItem="7o2-bY-WCF" secondAttribute="bottom" constant="119" id="P9U-Nr-QxL"/>
+                            <constraint firstItem="Po8-IL-dlW" firstAttribute="trailing" secondItem="9il-YL-HEk" secondAttribute="trailing" id="bAf-Tm-tSh"/>
+                            <constraint firstItem="Po8-IL-dlW" firstAttribute="leading" secondItem="9il-YL-HEk" secondAttribute="leading" id="sF1-JQ-VeR"/>
+                            <constraint firstItem="9il-YL-HEk" firstAttribute="top" secondItem="Po8-IL-dlW" secondAttribute="bottom" constant="61" id="sS5-N4-AtE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="info" id="b16-XE-kV6"/>
